@@ -18,7 +18,7 @@ return {
                                 setext = true,
                                 sign = true,
 
-                                icons = { '󰼏 ', '󰼐' , '󰼑 ', '󰼒  ', '󰼓 ', '󰼔 ' },
+                                icons = { '󰼏 ', '󰼐 ' , '󰼑 ', '󰼒  ', '󰼓 ', '󰼔 ' },
                                 position = 'overlay',
                                 signs = { '󰫎 ' },
                                 width = 'full',
