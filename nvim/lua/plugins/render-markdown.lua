@@ -18,7 +18,7 @@ return {
                                 setext = true,
                                 sign = true,
 
-                                icons = { '󰼏', '󰼐', '󰼑 ', '󰼒 ', '󰼓 ', '󰼔 ' },
+                                icons = { '󰼏 ', '󰼐' , '󰼑 ', '󰼒  ', '󰼓 ', '󰼔 ' },
                                 position = 'overlay',
                                 signs = { '󰫎 ' },
                                 width = 'full',
@@ -69,7 +69,7 @@ return {
                                 disable_background = { 'diff' },
                                 background_inset = 1,
                                 width = 'full',
-                                
+
                                 left_margin = 0,
                                 left_pad = 0,
                                 right_pad = 0,
@@ -166,7 +166,7 @@ return {
                         latex = {
                                 enabled = true,
                                 render_modes = true,
-                                converter = { 'utftex', 'latex2text' },
+                                converter = {'utftex', 'latex2text'},
                                 highlight = 'RenderMarkdownMath',
                                 position = 'center',
 
