@@ -106,7 +106,7 @@ return {
 
                                 icon = '▋',
 
-                                repeat_linebreak = false,
+                                repeat_linebreak = true,
 
                                 highlight = {
                                         'RenderMarkdownQuote1',
@@ -124,6 +124,7 @@ return {
                                 important = { raw = '[!IMPORTANT]', rendered = '󰅾 Important', highlight = 'RenderMarkdownHint',    category = 'github'   },
                                 warning   = { raw = '[!WARNING]',   rendered = '󰀪 Warning',   highlight = 'RenderMarkdownWarn',    category = 'github'   },
                                 caution   = { raw = '[!CAUTION]',   rendered = '󰳦 Caution',   highlight = 'RenderMarkdownError',   category = 'github'   },
+
                         },
 
                         checkbox = {

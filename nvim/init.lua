@@ -32,3 +32,13 @@ vim.keymap.set('n', '<leader>z', 'z=', {desc = 'list of suggestions'})
 vim.keymap.set('n', '<leader>Z', 'zg>', {desc = 'Adds to dictionary'})
 
 vim.cmd.colorscheme("oldworld")
+
+-- Turns on spellcheck automatically for .md and .txt files
+
+vim.api.nvim_create_autocmd({"BufRead", "BufNewFile"}, {
+        pattern = {"*.md", "*.txt"},
+        callback = function ()
+                vim.opt_local.spell = true
+                vim.opt_local.spelllang = "en_us"
+        end,
+})
