@@ -31,7 +31,7 @@ vim.keymap.set('n', '<leader>s', ':setlocal nospell<CR>', {desc = 'Disables spel
 vim.keymap.set('n', '<leader>z', 'z=', {desc = 'list of suggestions'})
 vim.keymap.set('n', '<leader>Z', 'zg>', {desc = 'Adds to dictionary'})
 
-vim.cmd.colorscheme("oldworld")
+-- vim.cmd.colorscheme("colorscheme github_dark")
 
 -- Turns on spellcheck automatically for .md and .txt files
 

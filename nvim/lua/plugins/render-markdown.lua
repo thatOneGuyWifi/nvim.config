@@ -18,7 +18,7 @@ return {
                                 setext = true,
                                 sign = true,
 
-                                icons = { '󰼏 ', '󰼐 ' , '󰼑 ', '󰼒  ', '󰼓 ', '󰼔 ' },
+                                icons = { '󰼏 ', '󰼐 ' , '󰼑 ', '󰼒 ', '󰼓 ', '󰼔 ' },
                                 position = 'overlay',
                                 signs = { '󰫎 ' },
                                 width = 'full',
@@ -115,6 +115,22 @@ return {
                                         'RenderMarkdownQuote4',
                                         'RenderMarkdownQuote5',
                                         'RenderMarkdownQuote6',
+                                },
+                        },
+
+                        -- This is supposed to not make the text dissappear when it soft breaks a new line
+                        win_options = {
+                                showbreak = {
+                                        default = '',
+                                        rendered = '  ',
+                                },
+                                breakindent = {
+                                        default = false,
+                                        rendered = true,
+                                },
+                                breakindentopt = {
+                                        default = '',
+                                        rendered = '',
                                 },
                         },
 
