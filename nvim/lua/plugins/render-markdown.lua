@@ -116,6 +116,7 @@ return {
                                         'RenderMarkdownQuote5',
                                         'RenderMarkdownQuote6',
                                 },
+
                         },
 
                         -- This is supposed to not make the text dissappear when it soft breaks a new line
