@@ -12,7 +12,7 @@ return {
 				cpp = { "clang-format" },
 				html = { "js-beautify" },
 				css = { "js-beautify" },
-                                json = {"js-beautify"},
+				json = { "js-beautify" },
 			},
 		})
 
