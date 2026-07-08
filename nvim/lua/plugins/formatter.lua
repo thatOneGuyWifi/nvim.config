@@ -21,6 +21,6 @@ return {
 				async = true,
 				lsp_format = "fallback",
 			})
-		end, { desc = "Format selected lines" })
+		end, { desc = "Format shotcut" })
 	end,
 }

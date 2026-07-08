@@ -119,21 +119,6 @@ return {
 
                         },
 
-                        -- This is supposed to not make the text dissappear when it soft breaks a new line
-                        win_options = {
-                                showbreak = {
-                                        default = '',
-                                        rendered = '  ',
-                                },
-                                breakindent = {
-                                        default = false,
-                                        rendered = true,
-                                },
-                                breakindentopt = {
-                                        default = '',
-                                        rendered = '',
-                                },
-                        },
 
                         callout = {
                                 note      = { raw = '[!NOTE]',      rendered = '󰋽 Note',      highlight = 'RenderMarkdownInfo',    category = 'github'   },
