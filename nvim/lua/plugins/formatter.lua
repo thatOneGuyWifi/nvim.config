@@ -10,9 +10,9 @@ return {
 				javascript = { "prettierd", "prettier", stop_after_first = true },
 				markdown = { "mdformat" },
 				cpp = { "clang-format" },
-				html = { "js-beautify" },
-				css = { "js-beautify" },
-				json = { "js-beautify" },
+				html = { "prettier", "prettierd" },
+				css = { "prettier", "prettierd" },
+				json = { "prettier", "prettierd" },
 			},
 		})
 
@@ -21,6 +21,6 @@ return {
 				async = true,
 				lsp_format = "fallback",
 			})
-		end, { desc = "Format shotcut" })
+		end, { desc = "Format selected lines" })
 	end,
 }
