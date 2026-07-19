@@ -1,19 +1,19 @@
 return {
-        "reedes/vim-pencil",
-        lazy = false,
-        ft = {"markdown", "text", "tex"},
-        config = function ()
+          "preservim/vim-pencil",
+          ft = { "markdown", "text", "tex" },
 
-                vim.cmd([[
-                augroup pencil
+          config = function ()
+                  vim.g["pencil#wrapModeDefault"] = 'soft'
 
-                autocmd!
+                  local augroup = vim.api.nvim_create_augroup("UserPencilConfig", { clear = true })
 
-                autocmd FileType markdown,mkd call pencil#init()
+                  vim.api.nvim_create_autocmd("FileType", {
+                          pattern = { "markdown", "text", "tex" },
+                          group = augroup,
 
-                autocmd FileType text   call pencil#init()
-                autocmd FileType tex    call pencil#init()
-                augroup END
-                ]])
-        end
+                          callback = function ()
+                                  vim.cmd("call pencil#init()")
+                          end,
+                  })
+          end
 }
